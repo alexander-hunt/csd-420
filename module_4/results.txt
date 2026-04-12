@@ -1,0 +1,24 @@
+Size: 50000
+Iterator time: 1134300 ns
+Get time: 825302400 ns
+
+Size: 500000
+Iterator time: 2674400 ns
+Get time: 92356573900 ns
+
+Size: 50000
+Iterator time: 1055300 ns
+Get time: 781857300 ns
+
+Size: 500000
+Iterator time: 3002800 ns
+Get time: 88212307100 ns
+
+Size: 50000
+Iterator time: 1029400 ns
+Get time: 819629500 ns
+
+Size: 500000
+Iterator time: 2678000 ns
+Get time: 89654933800 ns
+
