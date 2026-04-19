@@ -2,6 +2,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 public class UnitTestWordOrchestrator {
+    // Executes all unit tests and prints pass/fail results to the console.
     public static void main(String[] args) {
         UnitTestWordOrchestrator test = new UnitTestWordOrchestrator();
         test.testMain();
@@ -12,6 +13,7 @@ public class UnitTestWordOrchestrator {
         System.out.println("testDisplayWords passed");
     }
 
+    // Verifies that WordOrchestrator.main() produces the expected output for both ascending and descending word lists.
     public void testMain() {
         PrintStream originalOut = System.out;
         ByteArrayOutputStream capturedOut = new ByteArrayOutputStream();
@@ -60,6 +62,7 @@ public class UnitTestWordOrchestrator {
         }
     }
 
+    // Confirms that gatherWords() correctly reads and stores exactly 14 unique words from the input file.
     public void testGatherWords() {
         try {
             WordOrchestrator orchestrator = new WordOrchestrator("collection_of_words.txt");
@@ -96,6 +99,7 @@ public class UnitTestWordOrchestrator {
         }
     }
 
+    // Validates that displayWords() returns correctly formatted word lists in both ascending and descending order.
     public void testDisplayWords() {
         try {
             WordOrchestrator orchestrator = new WordOrchestrator("collection_of_words.txt");

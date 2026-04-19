@@ -4,11 +4,13 @@ public class WordOrchestrator {
     private String sourceFilePath;
     private TreeSet<String> collectionOfWords;
     
+    // Initializes the orchestrator with a file path and creates an empty TreeSet for words.
     public WordOrchestrator(String sourceFilePath) {
         this.sourceFilePath = sourceFilePath;
         this.collectionOfWords = new TreeSet<>();
     }
 
+    // Main entry point that loads words from file and displays them in both ascending and descending order.
     public static void main(String[] args) {
         WordOrchestrator orchestrator = new WordOrchestrator("collection_of_words.txt");
         orchestrator.gatherWords();
@@ -19,6 +21,7 @@ public class WordOrchestrator {
         System.out.print(orchestrator.displayWords(false));
     }
 
+    // Reads words from the source file and adds them to the collection, automatically removing duplicates.
     private void gatherWords() {
         try (java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader(sourceFilePath))) {
             String line;
@@ -34,6 +37,7 @@ public class WordOrchestrator {
         }
     }
     
+    // Returns a string of all words separated by line breaks, ordered ascending or descending based on the boolean parameter.
     private String displayWords(boolean isInAscendingOrder) {
         StringBuilder wordCollection = new StringBuilder();
         if (isInAscendingOrder) {
