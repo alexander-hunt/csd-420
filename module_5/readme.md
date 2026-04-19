@@ -5,6 +5,9 @@ This module reads words from a text file and displays them in both ascending and
 # run-wordorchestrator-tests.ps1
 PowerShell script that compiles and executes all code logic in module 5.
 
+# collection_of_words.txt
+Input data file containing words to be sorted. Words can appear multiple times; duplicates are automatically removed.
+
 # WordOrchestrator.java
 The main application class that orchestrates the word processing workflow.
 
@@ -33,11 +36,7 @@ Comprehensive unit test suite for `WordOrchestrator`.
 javac WordOrchestrator.java UnitTestWordOrchestrator.java
 java UnitTestWordOrchestrator
 ```
-
-# collection_of_words.txt
-Input data file containing words to be sorted. Words can appear multiple times; duplicates are automatically removed.
-
-# Expected Output
+### Expected Output
 
 ```
 Ascending Order:
