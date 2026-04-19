@@ -8,6 +8,20 @@ PowerShell script that compiles and executes all code logic in module 5.
 # collection_of_words.txt
 Input data file containing words to be sorted. Words can appear multiple times; duplicates are automatically removed.
 
+# UnitTestWordOrchestrator.java
+Comprehensive unit test suite for `WordOrchestrator`.
+
+**Tests:**
+- `testMain()` - Verifies the complete program output matches expected results
+- `testGatherWords()` - Confirms all 14 unique words are correctly read and stored
+- `testDisplayWords()` - Validates both ascending and descending output formatting
+
+**How to Run:**
+```bash
+javac WordOrchestrator.java UnitTestWordOrchestrator.java
+java UnitTestWordOrchestrator
+```
+
 # WordOrchestrator.java
 The main application class that orchestrates the word processing workflow.
 
@@ -23,19 +37,6 @@ javac WordOrchestrator.java
 java WordOrchestrator
 ```
 
-# UnitTestWordOrchestrator.java
-Comprehensive unit test suite for `WordOrchestrator`.
-
-**Tests:**
-- `testMain()` - Verifies the complete program output matches expected results
-- `testGatherWords()` - Confirms all 14 unique words are correctly read and stored
-- `testDisplayWords()` - Validates both ascending and descending output formatting
-
-**How to Run:**
-```bash
-javac WordOrchestrator.java UnitTestWordOrchestrator.java
-java UnitTestWordOrchestrator
-```
 ### Expected Output
 
 ```
