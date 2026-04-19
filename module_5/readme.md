@@ -83,9 +83,3 @@ computer
 cloud
 algorithm
 ```
-
-## Key Design Details
-
-- **TreeSet**: Automatically maintains words in sorted order and removes duplicates
-- **Reflection**: Unit tests use Java reflection to test private methods and fields
-- **Clean Architecture**: Separate concerns between gathering, displaying, and testing
