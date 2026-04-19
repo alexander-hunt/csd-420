@@ -3,18 +3,7 @@
 This module reads words from a text file and displays them in both ascending and descending alphabetical order.
 
 # run-wordorchestrator-tests.ps1
-PowerShell script that compiles and executes both the unit tests and the main application. (Runs through all the code in the assignment.)
-
-**What it does:**
-1. Compiles both Java files
-2. Runs `UnitTestWordOrchestrator` to validate functionality
-3. Runs `WordOrchestrator` to display the final results
-
-**How to Run:**
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\run-wordorchestrator-tests.ps1
-```
+PowerShell script that compiles and executes all code logic in module 5.
 
 # WordOrchestrator.java
 The main application class that orchestrates the word processing workflow.
